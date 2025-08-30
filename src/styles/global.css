@@ -5,33 +5,93 @@
  */
 
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
-  --black: 15, 18, 25;
-  --gray: 96, 115, 159;
-  --gray-light: 229, 233, 240;
-  --gray-dark: 34, 41, 57;
-  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  /* Primary Brand Colors */
+  --accent: #376BBE;          /* Peprion Blue (primary action color) */
+  --accent-dark: #0038a8;     /* Darker blue for hover/focus */
+
+  /* Neutrals */
+  --black: 17, 24, 39;        /* Deep charcoal for text */
+  --gray-dark: 55, 65, 81;    /* Muted heading/subtext gray */
+  --gray: 107, 114, 128;      /* Body text gray */
+  --gray-light: #f6f6f6;/* Border/light backgrounds */
+
+  /* Background Gradients */
+  --gray-gradient: rgba(var(--gray-light), 0.5), #ffffff;
+
+  /* Shadows */
   --box-shadow:
-    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-    0 16px 32px rgba(var(--gray), 33%);
+    0 2px 6px rgba(var(--gray), 0.25),
+    0 8px 24px rgba(var(--gray), 0.33),
+    0 16px 32px rgba(var(--gray), 0.33);
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Lora', serif;
 }
+
 @font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-family: 'Inter';
+  src: url('/fonts/inter-v18-latin-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-bold.woff") format("woff");
+  font-family: 'Inter';
+  src: url('/fonts/inter-v18-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-v35-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-v35-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-v35-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-v35-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-v18-latin-500.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/lora/lora-v35-latin-regular.woff2") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 body {
-  font-family: "Atkinson", sans-serif;
+  font-family: var(--font-body);
   margin: 0;
   padding: 0;
   text-align: left;
@@ -48,6 +108,10 @@ main {
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 3em 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 h1,
 h2,
