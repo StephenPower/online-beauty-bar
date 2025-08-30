@@ -4,10 +4,10 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import cloudflare from "@astrojs/cloudflare";
 import tailwindcss from "@tailwindcss/vite";
-
+ 
 // https://astro.build/config
 export default defineConfig({
-  site: "onlinebeauty.bar",
+  site: "https://wwww.onlinebeauty.bar",
   integrations: [mdx(), sitemap()],
 
   adapter: cloudflare({
@@ -20,3 +20,4 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 });
+
