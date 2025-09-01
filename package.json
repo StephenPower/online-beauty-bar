@@ -1,5 +1,5 @@
 {
-  "name": "astro-blog-starter-template",
+  "name": "onlinebeautybar",
   "description": "Build a personal website, blog, or portfolio with Astro.",
   "private": true,
   "cloudflare": {
@@ -21,11 +21,11 @@
     "@astrojs/sitemap": "3.4.1",
     "@tailwindcss/vite": "^4.1.12",
     "astro": "^5.13.5",
-    "tailwindcss": "^4.1.12",
     "typescript": "5.8.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^4.1.12",
     "wrangler": "4.21.x"
   },
   "scripts": {

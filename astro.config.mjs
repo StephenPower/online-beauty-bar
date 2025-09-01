@@ -9,7 +9,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://wwww.onlinebeauty.bar",
   integrations: [mdx(), sitemap()],
-
   adapter: cloudflare({
     platformProxy: {
       enabled: true,

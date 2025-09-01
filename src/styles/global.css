@@ -4,6 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+ 
 :root {
   /* Primary Brand Colors */
   --accent: #376BBE;          /* Peprion Blue (primary action color) */
@@ -26,6 +27,7 @@
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Lora', serif;
 }
+
 
 @font-face {
   font-family: 'Inter';
@@ -217,3 +219,4 @@ hr {
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
 }
+@import "tailwindcss";
