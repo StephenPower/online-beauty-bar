@@ -26,7 +26,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "tailwindcss": "^4.1.12",
-    "wrangler": "4.21.x"
+    "wrangler": "4.59.x"
   },
   "scripts": {
     "astro": "astro",
